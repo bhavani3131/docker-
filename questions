@@ -1,1 +1,5 @@
 The ADD command in Docker is used to copy files from a specified source location to a destination in the Docker image. It serves two primary functions: Copy local files from the host machine into the Docker image. Download files from a remote URL and add them to the Docker image.
+The COPY instruction lets us copy a file (or files) from the host system into the image. 
+CMD and ENTRYPOINT are two Dockerfile instructions that together define the command that runs when your container starts.
+Use ENTRYPOINT instructions when building an executable Docker image using commands that always need to be executed. 
+Use CMD instructions when you need an additional set of arguments that act as default instructions until there is explicit command-line usage when a Docker container runs
