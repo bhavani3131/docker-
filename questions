@@ -1,0 +1,1 @@
+The ADD command in Docker is used to copy files from a specified source location to a destination in the Docker image. It serves two primary functions: Copy local files from the host machine into the Docker image. Download files from a remote URL and add them to the Docker image.
