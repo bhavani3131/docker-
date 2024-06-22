@@ -1,0 +1,75 @@
+# docker-compose.yml
+version: '2'
+
+services:
+  web:
+    build:
+    # build from Dockerfile
+      context: ./Path
+      dockerfile: Dockerfile
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
+  redis:
+    image: redis
+      
+      
+Docker Compose is a tool for defining and running multi-container applications. It is the key to unlocking a streamlined and efficient development and deployment experience.
+
+Compose simplifies the control of your entire application stack, making it easy to manage services, networks, and volumes in a single, comprehensible YAML configuration file. Then, with a single command, you create and start all the services from your configuration file.
+
+Compose works in all environments; production, staging, development, testing, as well as CI workflows. It also has commands for managing the whole lifecycle of your application:
+
+Start, stop, and rebuild services
+View the status of running services
+Stream the log output of running services
+Run a one-off command on a service
+
+
+      # Starts existing containers for a service.
+docker-compose start
+
+# Stops running containers without removing them.
+docker-compose stop
+
+# Pauses running containers of a service.
+docker-compose pause
+
+# Unpauses paused containers of a service.
+docker-compose unpause
+
+# Lists containers.
+docker-compose ps
+
+# Builds, (re)creates, starts, and attaches to containers for a service.
+docker-compose up
+
+# Stops containers and removes containers, networks, volumes, and images created by up.
+docker-compose down
+
+
+docker compose version 
+docker compose config    
+docker compose start
+docker compose stop
+docker compose restart
+docker compose run    
+docker compose create  
+docker compose attach      
+docker compose pause
+docker compose unpause
+docker compose wait   
+docker compose up
+docker compose down
+docker compose ps
+docker compose top 
+docker compose events   
+docker compose logs
+docker compose images
+docker compose build      
+docker compose push  
+docker compose cp       
+docker compose exec 
+Reference#
+Building
